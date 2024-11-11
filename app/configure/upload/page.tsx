@@ -12,8 +12,9 @@ import { useToast } from "@/hooks/use-toast"
 
 
 
+
 const Page =()=>{
-   const {toast} = useToast()
+  const {toast} = useToast()
   const [isDragOver, setIsDragOver] = useState<boolean>(false)
   const onDropAccepted = (acceptedfiles: File[]) =>{
     startUpload(acceptedfiles,{configId: undefined})

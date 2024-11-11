@@ -14,10 +14,62 @@ datasource db {
 
 }
 
+enum OrderStatus {
+  fullfiled
+  shipped
+  awaiting_shipment
+}
+
+enum PhoneModel {
+  iphonex
+  iphone11
+  iphone12
+  iphone13
+  iphone14
+  iphone15
+  iphone16
+  samsung1
+  samsung2
+  samsung3
+  samsung4
+  tecno1
+  tecno2
+  redmi1
+  remdi2
+  redmi3
+  infinix1
+  infinix2
+}
+
+enum  CaseMaterial {
+     silicone
+     polycarbonate
+}
+
+enum CaseFinish {
+  smooth
+  textured
+}
+
+enum CaseColor {
+  black
+  blue
+  rose
+  gray
+  orange
+  yellow
+  white
+
+}
+
 model Configuration{
   id String @id @default(cuid())
   width Int
   height Int
   imageUrl  String
+  color     CaseColor?
+  model     PhoneModel?
+  material  CaseMaterial?
+  finish    CaseFinish?
   croppedImageUrl String? 
 }

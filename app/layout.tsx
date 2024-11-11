@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import Providers from "./components/Providers";
 
 
 
@@ -20,8 +21,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "DareApparel",
-  description: "Clothing Brand",
+  title: "Textura",
+  description: "Printing Service",
 };
 
 export default function RootLayout({
@@ -38,7 +39,9 @@ export default function RootLayout({
         <Navbar/>
         <main className='flex grainy-light flex-col min-h-[calc(100vh-3.5rem-1px)]'>
           <div className='flex-1 flex flex-col h-full'>
-          {children}
+          <Providers> 
+           {children}
+          </Providers>
           </div>
            <Footer/>
            </main>

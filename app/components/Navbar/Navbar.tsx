@@ -13,7 +13,7 @@ const Navbar = async ()=>{
     <MaxWithWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">  
         <Link href="/" className="flex z-40 font-semibold" >
-             <h5>Dare's <span className="text-orange-600">Apparel</span> </h5>
+             <h5><span className="text-orange-600">Textura</span> </h5>
      </Link>
     
      <div className="h-full flex items-center space-x-4">

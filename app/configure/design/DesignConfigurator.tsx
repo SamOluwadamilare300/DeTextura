@@ -11,7 +11,7 @@ import { COLORS, FINISHES, MATERIALS, MODELS } from "@/app/validators/option-val
 import { useState, useRef } from "react";
 import { Label } from "@/components/ui/label";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { formatPrice } from "@/lib/utils";
 import { BASE_PRICE } from "@/app/config/products";
@@ -380,7 +380,7 @@ interface DesignConfiguratorProps {
                 </p>
                 <Button
                   isLoading={isPending}
-                  isDisabled={isPending}
+              
                   loadingText="Saving"
                   onClick={() =>
                     saveConfig({

@@ -40,6 +40,7 @@ export interface ButtonProps
   asChild?: boolean
   isLoading?: boolean
   loadingText?: string
+  
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -47,6 +48,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     {
       className,
       isLoading,
+    
       loadingText,
       variant,
       children,

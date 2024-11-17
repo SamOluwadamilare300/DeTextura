@@ -43,7 +43,7 @@ const DesignPreview = ({configuration}: {configuration: Configuration}) => {
   // Flutterwave configuration inside component to access totalPrice
   const fwConfig = {
     public_key: 'FLWPUBK_TEST-93bc3cf0fcae86e2b33e17aaecd82c72-X',
-    tx_ref: Date.now(),
+    tx_ref: String(Date.now()),  // Convert to string
     amount: totalPrice / 100, // Convert from kobo to Naira
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',

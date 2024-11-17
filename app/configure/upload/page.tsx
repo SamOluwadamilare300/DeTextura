@@ -2,7 +2,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { Image, Loader2, MousePointer2, MousePointerSquareDashed } from "lucide-react"
+import { Image, Loader2, MousePointerSquareDashed } from "lucide-react"
 import { useState, useTransition } from "react"
 import DropZone, {FileRejection} from "react-dropzone"
 import { Progress } from "@/components/ui/progress"
@@ -86,7 +86,7 @@ const Page =()=>{
     isUploading || isPending ? (
       <Loader2 className="animate-spin h-6 w-6 text-zinc-500 mb-2" />
     ) : (
-      <Image className='h-6 w-6 text-zinc-500 mb-2' />
+      <Image className='h-6 w-6 text-zinc-500 mb-2' aria-label="Upload icon"   />
     )}
     <div className='flex flex-col justify-center mb-2 text-sm text-zinc-700'>
       {isUploading ? (

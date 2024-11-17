@@ -5,7 +5,8 @@ import Lottie from 'lottie-react';
 
 const Newsletter = () => {
   return (
-    <div className=" flex flex-col lg:flex-row items-center lg:items-start p-6 lg:p-12  w-full max-w-3xl mx-auto gap-8">
+    <div className="relative justify-between">
+    <div className=" flex flex-col lg:flex-row items-end gap-10 lg:items-start p-6 lg:p-12  w-full max-w-3xl mx-auto">
       
       {/* Animation Section */}
       <motion.div
@@ -46,6 +47,7 @@ const Newsletter = () => {
         </form>
       </motion.div>
       
+    </div>
     </div>
   );
 };

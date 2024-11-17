@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import  {Rnd} from "react-rnd"
 import HandleComponent from "@/components/HandleComponent";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import {RadioGroup, RadioGroupDescription} from "@headlessui/react"
+import {RadioGroup} from "@headlessui/react"
 import { COLORS, FINISHES, MATERIALS, MODELS } from "@/app/validators/option-validators";
 import { useState, useRef } from "react";
 import { Label } from "@/components/ui/label";
@@ -20,7 +20,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { saveConfig as _saveConfig, SaveConfigArgs } from "./action";
 import { useRouter } from "next/navigation";
-// import { useRouter } from "next/router";
+
 
 
 
@@ -198,13 +198,17 @@ interface DesignConfiguratorProps {
               topRight: <HandleComponent />,
               topLeft: <HandleComponent />,
             }}>
-            <div className='relative w-full h-full'>
+           
+           <div className="absolute inset-0 left-[3px] top-px right-[3px] bottom-px 
+                            rounded-[32px] z-20 overflow-hidden">
+
               <NextImage
                 src={imageUrl}
                 fill
                 alt='your image'
-                className='pointer-events-none'
-              />
+                className=" object-cover pointer-events-none"/>
+
+           
             </div>
           </Rnd>
         </div>
@@ -376,7 +380,7 @@ interface DesignConfiguratorProps {
                 </p>
                 <Button
                   isLoading={isPending}
-                  disabled={isPending}
+                  isDisabled={isPending}
                   loadingText="Saving"
                   onClick={() =>
                     saveConfig({

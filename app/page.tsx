@@ -3,14 +3,14 @@
 import React from 'react';
 import Image from 'next/image';
 import MaxWithWrapper from './components/MaxWithWrapper';
-import { ArrowRight, Check, Star } from 'lucide-react';
+import {  Check, Star } from 'lucide-react';
 import Phone from './components/Phone';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Icons } from './components/Icon';
 import { Reviews } from './components/Reviews';
-import { buttonVariants } from '@/components/ui/button';
+
 
 import Newsletter from './components/NewsLetter';
 
@@ -192,7 +192,7 @@ const Page = () => {
                 </p>
               </div>
               <div className='flex gap-4 mt-2'>
-                <img
+                <Image
                   className='rounded-full h-12 w-12 object-cover'
                   src='https://res.cloudinary.com/durtjwxjs/image/upload/v1730364557/mine_fkji3w.gif'
                   alt='user'
@@ -218,13 +218,13 @@ const Page = () => {
               </div>
               <div className="text-lg leading-8">
               <p>
-                “Partnering with Dare's Apparel for our T-shirt printing needs has been a fantastic experience. Their quick, quality service stands out—our shirts still look brand new even after six months of wear.
+                “Partnering with Textura for our T-shirt printing needs has been a fantastic experience. Their quick, quality service stands out—our shirts still look brand new even after six months of wear.
                   Ahh, Just Joking!<span className="p-0.5 bg-orange-600 rounded text-white"> ..But Highly recommend! "</span>
                 </p>
 
               </div>
               <div className='flex gap-4 mt-2'>
-                <img
+                <Image
                   className='rounded-full h-12 w-12 object-cover'
                   src='https://res.cloudinary.com/durtjwxjs/image/upload/v1730364575/user-5_oo1jld.png'
                   alt='user'
@@ -254,13 +254,13 @@ const Page = () => {
           </div>
           <div className='mx-auto max-w-6xl px-6 lg:px-8'>
             <div className='relative flex flex-col items-center md:grid grid-cols-2 gap-40'>
-              <img
+              <Image alt='img'
                 src='/arrow.png'
                 className='absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0'
               />
 
               <div className='relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl'>
-                <img
+                <Image alt='img'
                   src='/horse.jpg'
                   className='rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full'
                 />
@@ -288,7 +288,7 @@ const Page = () => {
               print warranty
             </li>
 
-            <div className='flex justify-center'>
+            {/* <div className='flex justify-center'>
                <Link
                 className={buttonVariants({
                   size: 'lg',
@@ -297,7 +297,7 @@ const Page = () => {
                 href='/configure/upload'>
                 Create Your Now <ArrowRight className='h-4 w-4 ml-1.5 ' />
               </Link>
-            </div>
+            </div> */}
           </ul>
           <Newsletter/>
         </MaxWithWrapper>

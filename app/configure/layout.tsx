@@ -8,6 +8,7 @@ const Layout =({children}:{children: ReactNode})=>{
          <MaxWithWrapper className="flex-1 flex flex-col" > 
           <Steps/>
          {children}
+         
         </MaxWithWrapper>
     )
 }

@@ -15,6 +15,7 @@ import {useKindeBrowserClient} from '@kinde-oss/kinde-auth-nextjs'
 import { createCheckoutSession } from './actions';
 import LoginModel from '@/app/components/LoginModel';
 
+
 //User Data
 const userData = {
   email: 'damilarea71@gmail.com',
@@ -53,7 +54,7 @@ const DesignPreview = ({configuration}: {configuration: Configuration}) => {
       logo: 'https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg',
     },
     text: 'Payment with Flutterwave!',
-    callback: (response) => {
+    callback: (response: any) => {
       console.log(response);
       closePaymentModal();
       router.push('http://localhost:3000/thank-you')

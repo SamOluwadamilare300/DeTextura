@@ -139,6 +139,8 @@ const Page = () => {
                 transition={{ duration: 0.5, delay: 0.7 }}
                 src="https://res.cloudinary.com/durtjwxjs/image/upload/v1730367033/your-image_emqvyu.png" 
                 alt="img" 
+                width={""}
+                height={""}
                 className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block" 
               />
               <motion.img 
@@ -146,10 +148,13 @@ const Page = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.9 }}
                 src="https://res.cloudinary.com/durtjwxjs/image/upload/v1730367049/line_tkbhs9.png" 
-                alt="" 
+                alt="img" 
+                width={""}
+                height={""}
                 className="absolute w-20 -left-6 -bottom-6 select-none"
               />
               <Phone 
+          
                 className="w-64" 
                 imgSrc="https://res.cloudinary.com/durtjwxjs/image/upload/v1730384983/2_ewg71c.jpg" 
               />
@@ -196,6 +201,8 @@ const Page = () => {
                   className='rounded-full h-12 w-12 object-cover'
                   src='https://res.cloudinary.com/durtjwxjs/image/upload/v1730364557/mine_fkji3w.gif'
                   alt='user'
+                  width={100}
+                  height={100}
                 />
                 <div className='flex flex-col'>
                   <p className='font-semibold'>Sam</p>
@@ -228,6 +235,8 @@ const Page = () => {
                   className='rounded-full h-12 w-12 object-cover'
                   src='https://res.cloudinary.com/durtjwxjs/image/upload/v1730364575/user-5_oo1jld.png'
                   alt='user'
+                  width={100}
+                  height={100}
                 />
                 <div className='flex flex-col'>
                   <p className='font-semibold'>John</p>
@@ -254,13 +263,13 @@ const Page = () => {
           </div>
           <div className='mx-auto max-w-6xl px-6 lg:px-8'>
             <div className='relative flex flex-col items-center md:grid grid-cols-2 gap-40'>
-              <Image alt='img'
+              <img alt='img'
                 src='/arrow.png'
                 className='absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0'
               />
 
               <div className='relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl'>
-                <Image alt='img'
+                <img alt='img'
                   src='/horse.jpg'
                   className='rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full'
                 />

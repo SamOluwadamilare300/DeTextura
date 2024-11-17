@@ -30,7 +30,7 @@ const Page = () => {
           {/* Mug Card */}
           <Link href="/configure/upload">
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-              <Image
+              <img
                 src="https://images.pexels.com/photos/3483967/pexels-photo-3483967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Mug"
                 className="w-full h-48 object-cover rounded-t-lg"
@@ -45,7 +45,7 @@ const Page = () => {
           {/* Phone Case Card */}
           <Link href="/configure/upload">
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-              <Image
+              <img
                 src="https://images.pexels.com/photos/10029867/pexels-photo-10029867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Phone Case"
                 className="w-full h-48 object-cover rounded-t-lg"
@@ -72,13 +72,13 @@ const Page = () => {
 
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="relative flex flex-col items-center md:grid grid-cols-2 gap-40">
-            <Image alt="img"
+            <img 
               src="/arrow.png"
               className="absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0"
             />
 
             <div className="relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl">
-              <Image alt="img"
+              <img alt="img"
                 src="/horse.jpg"
                 className="rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full"
               />

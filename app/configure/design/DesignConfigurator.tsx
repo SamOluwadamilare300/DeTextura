@@ -20,6 +20,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { saveConfig as _saveConfig, SaveConfigArgs } from "./action";
 import { useRouter } from "next/navigation";
+import { Input } from "@/components/ui/input"
 
 
 
@@ -364,8 +365,44 @@ interface DesignConfiguratorProps {
                     )
                   )}
                 </div>
+
+                <div className="mt-4 p-4 border border-gray-200 rounded-lg shadow-sm">
+               <h2 className="text-lg font-semibold mb-3">Info.</h2>
+  
+                  <div className="space-y-3">
+               <Input
+               className="w-full px-3 py-2 border border-gray-300 rounded"
+               type="text"
+             placeholder="Full Name"
+             aria-label="Full Name"
+              />
+    
+         <Input
+            className="w-full px-3 py-2 border border-gray-300 rounded"
+            type="text"
+            placeholder="Address"
+            aria-label="Address"
+            />
+    
+         <Input
+           className="w-full px-3 py-2 border border-gray-300 rounded"
+          type="tel"
+          placeholder="Phone Number"
+          aria-label="Phone Number"
+          />
+        </div>
+
+  <div className="mt-4">
+    <Label className="font-medium">Note:</Label>
+    <p className="text-sm text-gray-500 mt-1">
+      All deliveries and fees will be handled and determined by our logistics partner.
+    </p>
+  </div>
+</div>
+
               </div>
             </div>
+           
           </ScrollArea>
   
           <div className='w-full px-8 h-16 bg-white'>

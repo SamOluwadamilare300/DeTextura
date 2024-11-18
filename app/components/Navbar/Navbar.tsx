@@ -20,9 +20,7 @@ const Navbar = async () => {
       <MaxWithWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">
           <Link href="/" className="flex z-40 font-semibold">
-            <h5>
-              <span className="text-orange-600">Textura</span>
-            </h5>
+          <button className="font-bold text-3xl h-9 w-auto ml-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-400 to-pink-500">Texturà</button>
           </Link>
 
           <div className="h-full flex items-center space-x-4">

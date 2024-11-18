@@ -1,5 +1,5 @@
-
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google"; // Import Poppins font
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -7,9 +7,14 @@ import Footer from "./components/Footer/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import Providers from "./components/Providers";
 
+// Importing Poppins font
+const poppins = Poppins({
+  weight: ["100", "400", "700"],
+  subsets: ["latin"], 
+  variable: "--font-poppins",
+});
 
-
-
+// Local Fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -34,31 +39,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
       >
         <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
-  <div className="inline-flex gap-1 items-center">
-    <p className="text-white/60">
-      Login or Sign Up before customizations.<span className="hidden sm:inline" >You might lose your custom design doing so at the checkout while redirecting!</span> 
-    </p>
-  </div>
-</div>
+          <div className="inline-flex gap-1 items-center">
+            <p className="text-white/60">
+              Login or Sign Up before customizations.
+              <span className="hidden sm:inline">
+                You might lose your custom design doing so at the checkout while redirecting!
+              </span>
+            </p>
+          </div>
+        </div>
 
-        <Navbar/>
-        <main className='flex grainy-light flex-col min-h-[calc(100vh-3.5rem-1px)]'>
-          <div className='flex-1 flex flex-col h-full'>
-          <Providers> 
-           {children}
-          </Providers>
+        <Navbar />
+        <main className="flex grainy-light flex-col min-h-[calc(100vh-3.5rem-1px)]">
+          <div className="flex-1 flex flex-col h-full">
+            <Providers>{children}</Providers>
           </div>
 
-           <Footer/>
-           </main>
-           <Toaster/>
+          <Footer />
+        </main>
+        <Toaster />
       </body>
-   
     </html>
-     
   );
 }

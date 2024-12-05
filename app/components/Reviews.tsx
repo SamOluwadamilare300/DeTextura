@@ -10,11 +10,11 @@ import Image from 'next/image'
 const PHONES = [
     'https://res.cloudinary.com/durtjwxjs/image/upload/v1730390425/horse_phone_p1ebib.jpg',
   'https://res.cloudinary.com/durtjwxjs/image/upload/v1730384983/3_oviahi.jpg',
-  'https://res.cloudinary.com/durtjwxjs/image/upload/v1730384983/1_l4t3rf.jpg',
+  'https://res.cloudinary.com/durtjwxjs/image/upload/v1732175051/B_W_npdkvt.jpg',
   'https://res.cloudinary.com/durtjwxjs/image/upload/v1730384983/2_ewg71c.jpg',
   'https://res.cloudinary.com/durtjwxjs/image/upload/v1730390425/horse_phone_p1ebib.jpg',
   'https://res.cloudinary.com/durtjwxjs/image/upload/v1730384983/2_ewg71c.jpg',
-  'https://res.cloudinary.com/durtjwxjs/image/upload/v1730384983/1_l4t3rf.jpg',
+  'https://res.cloudinary.com/durtjwxjs/image/upload/v1730389734/imageedit_2_2929149285_hiqbnx.jpg',
 ]
 
 function splitArray<T>(array: Array<T>, numParts: number) {

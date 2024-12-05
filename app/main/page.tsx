@@ -4,6 +4,8 @@ import Phone from "../components/Phone"; // Import the Phone component
 import { Check } from "lucide-react";
 import Newsletter from "../components/NewsLetter";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
 
 const Page = () => {
   return (

@@ -93,7 +93,7 @@ const Page = () => {
                 variants={itemVariants}
                 className="mt-12 flex flex-col sm:flex-row items-center gap-5"
               >
-                <Link href="/order">
+                <Link href="/main">
                   <Button 
                     asChild
                     className="bg-orange-600 text-white hover:bg-orange-700 px-6 py-3 text-lg font-semibold rounded-md flex items-center gap-2"
@@ -102,7 +102,7 @@ const Page = () => {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      Make Order
+                      Create
                     </motion.div>
                   </Button>
                 </Link>

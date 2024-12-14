@@ -26,7 +26,7 @@ const OrderReceivedEmail = ({
   const baseUrl =
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : 'deployLink'
+      : 'https://detextura.onrender.com/'
 
   return (
     <Html>

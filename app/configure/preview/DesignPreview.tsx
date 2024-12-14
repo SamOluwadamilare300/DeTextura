@@ -57,7 +57,7 @@ const DesignPreview = ({configuration}: {configuration: Configuration}) => {
     callback: (response: any) => {
       console.log(response);
       closePaymentModal();
-      router.push('http://localhost:3000/thank-you')
+      router.push('https://detextura.onrender.com/thank-you')
     },
     
     onClose: () => {  

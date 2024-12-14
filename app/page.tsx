@@ -2,17 +2,17 @@
 
 import React from 'react';
 import Image from 'next/image';
-import MaxWithWrapper from './components/MaxWithWrapper';
 import {  Check, Star } from 'lucide-react';
-import Phone from './components/Phone';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Icons } from './components/Icon';
 import { Reviews } from './components/Reviews';
+import dynamic from 'next/dynamic';
 
-
-import Newsletter from './components/NewsLetter';
+const MaxWithWrapper = dynamic(()=> import ('./components/MaxWithWrapper'), {ssr: false})
+const Phone = dynamic(() => import ('./components/Phone'),{ ssr: false })
+const Newsletter= dynamic(()=> import ('./components/NewsLetter'), { ssr: false})
 
 
 const Page = () => {

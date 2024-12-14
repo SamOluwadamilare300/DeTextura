@@ -1,11 +1,13 @@
 import Link from "next/link";
-import MaxWithWrapper from "../components/MaxWithWrapper";
-import Phone from "../components/Phone"; // Import the Phone component
+
 import { Check } from "lucide-react";
-import Newsletter from "../components/NewsLetter";
+
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
+const Newsletter= dynamic(()=> import ('../components/NewsLetter'), { ssr: false})
+const Phone= dynamic(()=> import ('../components/Phone'), { ssr: false})
+const MaxWithWrapper = dynamic(() => import  ('../components/MaxWithWrapper'), {ssr: false} )
 
 const Page = () => {
   return (

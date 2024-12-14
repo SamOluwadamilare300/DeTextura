@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { db } from "@/db";
-import DesignConfigurator from "./DesignConfigurator";
+import dynamic from "next/dynamic";
+const  DesignConfigurator = dynamic(() => import  ('./DesignConfigurator'), {ssr: false} )
 
 interface PageProps {
   searchParams: {

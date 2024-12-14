@@ -30,3 +30,16 @@ const nextConfig = {
 
 
 export default nextConfig;
+
+
+// const nextConfig = {
+//   env: {
+//     KINDE_SITE_URL: process.env.KINDE_SITE_URL ?? `https://https://detextura.onrender.com`,
+//     KINDE_POST_LOGOUT_REDIRECT_URL:
+//       process.env.KINDE_POST_LOGOUT_REDIRECT_URL ?? `https://https://detextura.onrender.com`,
+//     KINDE_POST_LOGIN_REDIRECT_URL:
+//       process.env.KINDE_POST_LOGIN_REDIRECT_URL ?? `https://https://detextura.onrender.com/dashboard`
+//   }
+// };
+
+// module.exports = nextConfig;

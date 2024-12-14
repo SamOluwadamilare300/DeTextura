@@ -85,7 +85,7 @@ const Navbar = async () => {
               })}
             >
               Create
-              <ArrowRight className="ml-1.5 h-5 w-5" />
+              {/* <ArrowRight className="ml-1.5 h-5 w-5" /> */}
             </Link>
           </div>
         </div>
